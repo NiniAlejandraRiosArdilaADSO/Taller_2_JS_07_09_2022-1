@@ -1,19 +1,19 @@
 addEventListener("DOMContentLoaded", ()=>{
-    //   Escribir un programa que calcule el área y el volumen de un cilindro:  ");
+    //   Escribir un algoritmo que permita obtener las raíces reales de la ecuación de segundo grado: );
 
 
-    let radio=Number(prompt("Ingrese un numero del radio" , 5))
+    let a=Number(prompt("Ingrese valor de a" , 7))
 
-    let altura=Number(prompt("Ingrese un numero de la altura" , 3))
+    let b=Number(prompt("Ingrese valor de a" , 4))
 
-    let volumen= Math.PI * Math.pow(radio,2 * altura) 
+    let c=Number(prompt("Ingrese valor de c" , 1))
 
-    let area= (2 * (Math.PI * Math.pow(radio,2))) + ((2 * Math.PI * radio) * altura )
+    let x=24
+
+    let z= (a* Math.pow( x , 2)+ b * x + c)
 
     console.group();
-        console.log(`el volumen es  : ${volumen}`)
-        console.log(`el area es: ${area}`)
+        alert(`El resultado de la raiz es : ${z}`)
     console.groupEnd();
 
 })
-  
