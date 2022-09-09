@@ -1,19 +1,19 @@
 addEventListener("DOMContentLoaded", ()=>{
-    //   Escribir un programa que evalúe la siguiente expresión: ")
-    //   (a+7*c)/(b+2-a)+2*b")
-  
-    let a,b,c,d,z
+    //   Escribir un programa que calcule el área y el volumen de un cilindro:  ");
 
-    a=Number(prompt("Ingrese un numero" , 5))
-    b=Number(prompt("Ingrese un numero" , 8))
-    c=Number(prompt("Ingrese un numero" , 2))
 
-    z= (a+7*c)/(b+2)
-  
+    let radio=Number(prompt("Ingrese un numero del radio" , 5))
+
+    let altura=Number(prompt("Ingrese un numero de la altura" , 3))
+
+    let volumen= Math.PI * Math.pow(radio,2 * altura) 
+
+    let area= (2 * (Math.PI * Math.pow(radio,2))) + ((2 * Math.PI * radio) * altura )
+
     console.group();
-        alert(`calcule la expresion : ${z}`)
+        console.log(`el volumen es  : ${volumen}`)
+        console.log(`el area es: ${area}`)
     console.groupEnd();
-    
-  })
-  
+
+})
   
