@@ -1,12 +1,11 @@
 addEventListener(`DOMContentLoaded`, ()=>{
-    //   programa que muestre el pago de una llamada telefonica:  );
-    let valor=Number(prompt(`Ingrese la altura `,355));
-    let tiempo=Number(prompt(`Ingrese el largo`,60));
-    let iva=Number(prompt(`Ingrese el ancho `,20));
+    //   Realice un algoritmo que a partir de proporcionarle la velocidad de un automóvil expresada enkilómetros por hora, proporcione la velocidad en metros por segundos.  );
 
-    let gft=(valor * tiempo )*iva ;
-    let total2=gft +(valor*tiempo) ;
+    let km=Number(prompt(`Ingrese la velocidad en km:  `,5));
+ 
+    let velocidadms=(km * 1000 ) / 3600 ;
+    
 
 
-    console.log(`el volumen del elipsoide : ${total2}`);
+    console.log(`el volumen del elipsoide : ${velocidadms}`);
 })
