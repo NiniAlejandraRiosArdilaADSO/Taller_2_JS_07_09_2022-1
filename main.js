@@ -1,17 +1,12 @@
-addEventListener("DOMContentLoaded", ()=>{
-    //   Escribir un programa que calcule el volumen de un elipsoide: );
+addEventListener(`DOMContentLoaded`, ()=>{
+    //   programa que muestre el pago de una llamada telefonica:  );
+    let valor=Number(prompt(`Ingrese la altura `,355));
+    let tiempo=Number(prompt(`Ingrese el largo`,60));
+    let iva=Number(prompt(`Ingrese el ancho `,20));
+
+    let gft=(valor * tiempo )*iva ;
+    let total2=gft +(valor*tiempo) ;
 
 
-    let a=Number(prompt("Ingrese la altura " , 7))
-
-    let b=Number(prompt("Ingrese el largo" , 5))
-
-    let c=Number(prompt("Ingrese el ancho " , 3))
-
-    let volumen= (4/3 * Math.PI * a * b * c *)
-
-    console.group();
-        alert(`el volumen del elipsoide : ${volumen}`)
-    console.groupEnd();
-
+    console.log(`el volumen del elipsoide : ${total2}`);
 })
