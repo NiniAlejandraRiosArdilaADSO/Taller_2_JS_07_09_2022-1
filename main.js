@@ -1,11 +1,16 @@
 addEventListener(`DOMContentLoaded`, ()=>{
-    //   Realice un algoritmo que a partir de proporcionarle la velocidad de un automóvil expresada enkilómetros por hora, proporcione la velocidad en metros por segundos.  );
+    //   Una farmacia aplica al precio de los remedios el 10% de descuento, hacer un programa que ingresando el costo de los medicamentos calcules el descuento y el precio final.
 
-    let km=Number(prompt(`Ingrese la velocidad en km:  `,5));
+    let precio=Number(prompt(`Ingrese el valor del producto :  `,2500));
  
-    let velocidadms=(km * 1000 ) / 3600 ;
+    let descuento= 10;
+
+    let des= (precio * descuento) / 100
+
+    let total =(precio-des)
     
 
 
-    console.log(`el volumen del elipsoide : ${velocidadms}`);
+    console.log(`total a  pagar  : ${total}`);
+    
 })
