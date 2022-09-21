@@ -1,20 +1,16 @@
 addEventListener(`DOMContentLoaded`, ()=>{
-    //   Realizar el pseudocódigo que representen el algoritmo correspondiente para obtener el promedio de las calificaciones obtenidas 
+    //   Un vendedor recibe un sueldo base más el 10% de comisión sobre sus ventas. Si en un mes cualquiera hace tres ventas por valores:
 
-    let n1=Number(prompt(`INGRESE NOTA 1 :  `, 4));
-    let n2=Number(prompt(`INGRESE NOTA 2 :  `, 4));
-    let n3=Number(prompt(`INGRESE NOTA 3 :  `, 4));
-    let n4=Number(prompt(`INGRESE NOTA 4 :  `, 4));
-    let suma= (n1+n2+n3+n4)/4
+    let v1 =Number(prompt(`VALOR DE LA VENTA 1 :  `, 4000));
+    let v2 =Number(prompt(`VALOR DE LA VENTA 2 :  `, 3000));
+    let v3 =Number(prompt(`VALOR DE LA VENTA 3 :  `, 2000));
+    let sueldo =Number(prompt(`INGRESA TU SUELDO BASE  :  `, 50000));
+    let comision = (v1 + v2 + v3 ) * .10
+    let total =(sueldo + comision)
     
-    if (suma <3 ) {
-        console.log (`NO PASO!!`)
-    }else{
-        console.log (`Muchas felicidades pasaste!! `)
-    }
-
     
-    console.log (`SU PROMEDIO ES : ${suma} `)
-
+    console.log (`SU SUELDO BASE ES  : ${sueldo} `)
+    console.log (`SU COMISION DEL MES ES  : ${comision}`)
+    console.log (`SU SUELDO TOTAL DEL MES ES  : ${total}`)
 
 })
