@@ -1,17 +1,13 @@
 addEventListener(`DOMContentLoaded`, ()=>{
-    //   Elaborar un algoritmo para calcular el promedio final de la materia de algoritmos. Dicha calificación se compone de los siguientes porcentajes:  
+    //   Dado el valor que un cliente paga por un producto, calcular qué valor corresponde al costo total del producto y cuánto es el valor del IVA. Considerando que el porcentaje del IVA puede variar en el tiempo y de un producto a otro, este dato se lee por teclado.  
 
-    let trabajoFinal=Number(prompt(`Ingrese nota del trabajo final :  `,4));
-    let p1 = Number(prompt(`INGRESE NOTA DEL PARCIAL 1 : `,3 ))
-    let p2 = Number(prompt(`INGRESE NOTA DEL PARCIAL 2 :` ,1 ))
-    let p3 = Number(prompt(`INGRESE NOTA DEL PARCIAL 3 : `,5 ))
-    let examenFinal = Number(prompt(`ÌNNGRESE NOTA DEL EXAMEN FINAL : `,4.5))
-    let ex = 0.55
-    let t = 0.15
-    let e = 0.3
-    let promedio = (p1+ p2 +p3)/3
-    let cfinal = (promedio*ex) + (trabajoFinal*e) +(examenFinal*t)
+    let valor=Number(prompt(`INGRESE EL VALOR INICIAL DEL PRODUCTO:  `,5000));
+    let iva = 0.20
+    let precio = valor / (1-iva)
+    let des = (precio * iva) / 100
+    let precio2 = (valor)
     
-    console.log (`promedio : ${promedio} `)
-    console.log (`calificacion : ${cfinal}`)
+    console.log (`valor del producto sin iva : ${precio2} `)
+    console.log (`valor del producto con iva : ${des}`)
+    console.log (`Coste : $ ${precio}`)
 })
