@@ -1,14 +1,20 @@
 addEventListener(`DOMContentLoaded`, ()=>{
-    //   Calcular el sueldo de un empleado dados comodatos de entrada: el nombre, hrs. De trabajo y el pago en hora.
+    //   Realizar el pseudocódigo que representen el algoritmo correspondiente para obtener el promedio de las calificaciones obtenidas 
 
-    let nombre=prompt(`INGRESE SU NOMBRE :  `);
-    let horas = Number(prompt(`CUANTAS HORAS TRABAJO A LA SEMANA : `, 7))
-    let pago = 15300
+    let n1=Number(prompt(`INGRESE NOTA 1 :  `, 4));
+    let n2=Number(prompt(`INGRESE NOTA 2 :  `, 4));
+    let n3=Number(prompt(`INGRESE NOTA 3 :  `, 4));
+    let n4=Number(prompt(`INGRESE NOTA 4 :  `, 4));
+    let suma= (n1+n2+n3+n4)/4
+    
+    if (suma <3 ) {
+        console.log (`NO PASO!!`)
+    }else{
+        console.log (`Muchas felicidades pasaste!! `)
+    }
 
-    let pagos = (horas * pago)
     
-    
-    console.log (`Buenos dias sr@  : ${nombre} `)
-    console.log (`tu sueldo es : ${pagos}`)
+    console.log (`SU PROMEDIO ES : ${suma} `)
+
 
 })
