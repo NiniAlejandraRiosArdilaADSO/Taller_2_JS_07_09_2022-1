@@ -1,13 +1,14 @@
 addEventListener(`DOMContentLoaded`, ()=>{
-    //   Un jefe de obra con el dinero que tiene compra cinco juegos de llaves hexagonales cada uno por $11500. Una bomba en $1168000 y tres cajas de pernos cada uno por $87000. Después de pagar le sobran $91000. ¿cuánto dinero tenía?
-    let juegos= 11500*5
-    let bomba= 1168000
-    let pernos= 87000*3
-    let sobran= 91000
-    let suma= juegos+bomba+pernos+sobran
-    
+    //   En el programa de cocina de “Doña Anita” han dado la receta para la preparación de bizcocho especial de chocolate. Por cada 100 gramos de harina hay que añadir 10 gramos de cacao y un puñado de nueces. Si quiero prepararlos con 20 gramos de chocolate. La cantidad de gramos de harina para hacer el bizcocho es 
 
-    console.log(`EL TOTAL DEL DINERO ES  :  ${suma}`)
+    let harina=100
+    let kakao=10
+    let maskakao=20
+
+    let mult=harina*maskakao
+    let div=mult/kakao
+
+    console.log(`LA CANTIDAD DE GRAMOS DE HARINNA PARA HACER EL BIZCOCHO ES :  ${div}`)
 
 
 })
