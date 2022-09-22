@@ -1,12 +1,15 @@
 addEventListener(`DOMContentLoaded`, ()=>{
-    //   tres estudiantes reunieron tapas de gaseosas para repartirlas y venderlas al final del año. Martin toma2/3 del total. Jairo un cuarto del total, y Lorena se queda con el resto. ¿qué parte le corresponde a Lorena?
+    //   Pinturas “La brocha gorda” requiere determinar cuánto cobrar por trabajos de pintura. Considere que se cobra por m2 y realice el código que representen el algoritmo que le permita ir generando presupuestos para cada cliente. 
                                                     
-    let e1=(2/3)*300
-    let e2=(1/4)*300
-    let e3=(5/60)*300
+    let n = (prompt(`ESCRIBE TU NOMBRE  : `))
+    let a = Number(prompt(`ESCRIBE EL AÑO ACTUAL : `,2022)) 
+    let c = Number(prompt(`ESCRIBE TU FECHA DE NACIMIENTO  : `,2005))
     
+    let rta = a-c
+    
+    console.log(`VIENVENID@ :  ${a}`)
+    console.log(`VIENVENID@ :  ${rta}`)
 
-    console.log(`'Lorena le corresponde el 5/60 ${e3}`)
 
 
 })
