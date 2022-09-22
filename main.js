@@ -1,12 +1,12 @@
 addEventListener(`DOMContentLoaded`, ()=>{
-    //   Un camión transporta 25 cajas de repuestos de carros. Si cada caja pesa 748 Kg ¿ Cuántos Kg transporta ? 
+    //   tres estudiantes reunieron tapas de gaseosas para repartirlas y venderlas al final del año. Martin toma2/3 del total. Jairo un cuarto del total, y Lorena se queda con el resto. ¿qué parte le corresponde a Lorena?
+                                                    
+    let e1=(2/3)*300
+    let e2=(1/4)*300
+    let e3=(5/60)*300
+    
 
-    let caja=25
-    let peso=748
-    let c1=1*748
-    let suma=caja*peso
-
-    console.log(`TRANSPORTA : KG ${suma}`)
+    console.log(`'Lorena le corresponde el 5/60 ${e3}`)
 
 
 })
