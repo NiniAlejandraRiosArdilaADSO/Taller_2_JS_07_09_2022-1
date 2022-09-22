@@ -1,17 +1,13 @@
 addEventListener(`DOMContentLoaded`, ()=>{
-    //   Generar el algoritmo que dé como resultado el tiempo estimado para el llenado de un depósito
-
-    let di =Number(prompt(`VALOR DEL DIAMETRO :  `, 10)) ;
-    let al =Number(prompt(`VALOR DE LA ALTURA : `, 2)) ;
-    let r = di/2 ;
-    let rc = 3.14 * (r * 2) * (r * 2) * al;
-    let vlitros = rc * 1000
-    let miunutos = 60
-    let q = rc / miunutos
+    //   Un jefe de obra con el dinero que tiene compra cinco juegos de llaves hexagonales cada uno por $11500. Una bomba en $1168000 y tres cajas de pernos cada uno por $87000. Después de pagar le sobran $91000. ¿cuánto dinero tenía?
+    let juegos= 11500*5
+    let bomba= 1168000
+    let pernos= 87000*3
+    let sobran= 91000
+    let suma= juegos+bomba+pernos+sobran
     
 
-    console.log(`VOLUMEN : ${rc} `)
-    console.log(`TIEMPO :  ${q}`)
+    console.log(`EL TOTAL DEL DINERO ES  :  ${suma}`)
 
 
 })
